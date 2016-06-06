@@ -1,0 +1,17 @@
+- project:
+    name: CDCI-Template
+    groups:
+      - Group_One:
+            short_name: group1
+      - Group_Two:
+            short_name: group2
+  
+    jobs:
+      - '{groups}-MS1-Develop-Build'
+      - '{groups}-MS2_Develop-Deploy'
+      - '{groups}-MS3_Develop-Test'
+      - '{groups}-MS4_Test-Deploy'
+      - '{groups}-MS5_Test-Test'
+      - '{groups}-MS6_Production-Deploy'
+      - '{groups}-MS7_Production-Test'
+
